@@ -1,6 +1,16 @@
+.blur {
+  height: 100%;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  position: relative;
+  margin-top: 0px;
+}
+
 .to-show {
   position: relative;
-  margin: 0px;
+  margin-top: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -14,19 +24,30 @@
   justify-content: center;
   display: flex;
 }
+.text-container:focus {
+  cursor: pointer;
+  caret-color: rgb(128, 255, 0);
+}
+textarea:focus {
+  cursor: cell;
+}
 .my-component {
   z-index: 9;
-  margin: 30px;
+  margin: 0px;
   position: relative;
 }
 .controllers {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin-right: 50px;
+
   align-items: center;
   justify-content: center;
-  height: auto;
+  height: 250px;
   width: 100%;
+  background-color: rgba(152, 152, 152, 0.424);
+  margin-bottom: 50px;
+  border-radius: 20px;
 }
 .css_field {
   height: auto;
@@ -36,32 +57,26 @@
   text-align: justify;
   font-size: medium;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(152, 152, 152, 0.424);
 }
 .css_component {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin: 0px;
 }
 .css_button {
-  height: 30px;
+  height: 40px;
   width: 300px;
   background-color: transparent;
-  border: 0.1px solid gray;
+  border: 1px solid rgb(0, 0, 0);
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 40px;
   cursor: pointer;
 }
 .css_button:hover {
   background-color: aliceblue;
   transition: 0.2s ease-in;
-}
-.blur {
-  height: "100vh";
-  font-size: large;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  max-width: 100%;
 }

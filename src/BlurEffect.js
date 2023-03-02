@@ -36,6 +36,24 @@ function BlurEffect() {
 
   return (
     <div className="blur">
+      <div className="to-show">
+        <div className="text-container">This component will be blurred</div>
+        <div
+          className="my-component"
+          style={{
+            height: "300px",
+            background: `${componentcolor}`,
+            filter: `blur(${blurLevel}px)`,
+            margin: "50px",
+            alignItems: "center",
+            justifyContent: "center",
+            display: "flex",
+            borderRadius: `${componentradius}px`,
+            rotate: "5deg",
+            opacity: `${componentOpacity}`,
+          }}
+        ></div>
+      </div>
       <div className="controllers">
         <label>Blur Level </label>
         <input
@@ -86,26 +104,6 @@ function BlurEffect() {
           onChange={handleOpacity}
         ></input>
       </div>
-
-      <div className="to-show">
-        <div className="text-container">This component will be blurred</div>
-        <div
-          className="my-component"
-          style={{
-            height: "300px",
-            background: `${componentcolor}`,
-            filter: `blur(${blurLevel}px)`,
-            margin: "50px",
-            alignItems: "center",
-            justifyContent: "center",
-            display: "flex",
-            borderRadius: `${componentradius}px`,
-            rotate: "5deg",
-            opacity: `${componentOpacity}`,
-          }}
-        ></div>
-      </div>
-
       <div className="css_component">
         <textarea value={cssCode} readOnly rows={10} className="css_field" />
         <button className="css_button" onClick={handleCopyCode}>
