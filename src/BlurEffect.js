@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Blur.css";
+import signature from "./signature.jpg";
 function BlurEffect() {
   const [blurLevel, setBlurLevel] = useState(8);
   const [cssCode, setCssCode] = useState("");
@@ -36,6 +37,7 @@ function BlurEffect() {
 
   return (
     <div className="blur">
+      
       <div className="to-show">
         <div className="text-container">This component will be blurred</div>
         <div

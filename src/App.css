@@ -12,3 +12,20 @@
     #ffcc70 100%
   );
 }
+.signature {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.signature_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
